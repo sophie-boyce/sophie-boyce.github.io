@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<html>
+
+   <head>
+
+      <title>Mr. Bunny Day</title>
+
+	<audio src="https://drive.google.com/uc?id=1hWsJ4yff0u12H8EFWry91pjJt82_R85m" loop="loop" autoplay="autoplay">
+
+	</audio>
+
+        <style>
+
+            body {
+
+                background-color: #ffcc66
+
+            }
+
+        </style>
+
+      <script>
+
+          function displayNextImage() {
+
+              x = (x === images.length - 1) ? 0 : x + 1;
+
+              document.getElementById("img").src = images[x];
+
+          }
+
+
+
+          function displayPreviousImage() {
+
+              x = (x <= 0) ? images.length - 1 : x - 1;
+
+              document.getElementById("img").src = images[x];
+
+          }
+
+
+
+          function startTimer() {
+
+              setInterval(displayNextImage, 700);
+
+          }
+
+
+
+          var images = [], x = -1;
+
+          images[0] = "https://drive.google.com/uc?id=1DVkQ6nbWsIpwrEn5lD702zYWi6zzhYPR";
+
+          images[1] = "https://drive.google.com/uc?id=1HRFaVPSF2D6MU6ZoElDwAvHM6ogioLTW";
+
+          images[2] = "https://drive.google.com/uc?id=1_9FIUHV_mhhtxHWh3cLQaNB4FUBLQL1r";
+
+          images[3] = "https://drive.google.com/uc?id=1sknor6nK23xKzeIDwy-n5iktPgyphpEp";
+
+          images[4] = "https://drive.google.com/uc?id=1tRxzJxqEldg4JD3FxIAkmhZE7UW6lyWP";
+
+          images[5] = "https://drive.google.com/uc?id=1Uifs0Di961MnM-lwL6nUHTd_Qv7sf8CF";
+
+          images[6] = "https://drive.google.com/uc?id=14QDv2DkbJQTguqtW7_fS23rOEGx_ZTs5";
+
+          images[7] = "https://drive.google.com/uc?id=1UFoV--ezVkImP4lMFCEr9qS6tB7yOgYj";
+
+          images[8] = "https://drive.google.com/uc?id=1F5jghF-_uSdk0x7enLVIThqpUhELkL4A";
+
+          images[9] = "https://drive.google.com/uc?id=16F2ifduiNl01S1fsSsFxe_YxdlK5udyg";
+
+
+     </script>
+
+   </head>
+
+
+
+   <body style="text-align:center;" onload = "startTimer()">
+
+       <h1>Happy Mr. Bunny Day!</h1>
+
+       <img id="img" src="startpicture.jpg"/>
+
+   </body>
+
+</html>
